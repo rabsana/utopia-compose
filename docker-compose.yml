@@ -2,6 +2,7 @@ version: "3.8"
 services:
   utopia:
     image: sajjad30sakhti/utopia:v0.1.4
+    restart: always
     deploy:
       resources:
         limits:
