@@ -1,6 +1,9 @@
 # Run utopia inside docker container
 
-Clone this repo and run following command insdie cloned directory
+first Clone this repo,
+then rename `.env.example` file to `.env`
+
+finalyy run following command
 
 ```
 docker-compose up -d
