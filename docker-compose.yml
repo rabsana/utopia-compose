@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  utopia:
+    image: sajjad30sakhti/utopia:v0.1.4
+    deploy:
+      resources:
+        limits:
+          cpus: '0.95'
+          memory: 512M
+    volumes:
+      - ./data:/root/utopia
+    ports:
+      - "${UTOPIA_HTTP_PORT}:10010"
+      - "${UTOPIA_HTTPS_PORT}:10100"
