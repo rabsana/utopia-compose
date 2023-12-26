@@ -8,6 +8,8 @@ services:
         limits:
           cpus: '0.95'
           memory: 512M
+      reservations:
+          memory-swap: 1024M
     volumes:
       - ./data:/root/utopia
     ports:
